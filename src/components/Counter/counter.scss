@@ -1,0 +1,25 @@
+.counter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    button {
+        background: lightgray;
+        border: none;
+        width: 25%;
+        border-left: 1px solid #111;
+        height: 100%;
+        font-size: 18px;
+
+        &:first-child {
+            border-right: 1px solid #111;
+            border-left: none;
+        }
+    }
+
+    small {
+        font-size: 18px;
+    }
+}

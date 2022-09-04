@@ -1,0 +1,39 @@
+.cartitem {
+    height: 110px;
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    background: red;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin: 20px 10px 0 10px;
+    border-radius: 5px;
+    color: black;
+
+    img {
+        height: 90%;
+        width: 30%;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-between;
+        span {
+            font-size: 25px;
+            display: inline-block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+
+        }
+
+        &-number {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+    }
+}

@@ -1,0 +1,51 @@
+$height-header-item: 40px;
+
+.header {
+  display: flex;
+  height: 65px;
+  background: rebeccapurple;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+
+  >img {
+    width: 50px;
+    height: 50px;
+  }
+
+  >div {
+    font-size: 30px;
+    margin-left: -210px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    align-items: center;
+    height: 100%;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      font-size: 15px;
+      height: $height-header-item;
+      align-items: center;
+      width: 90px;
+      justify-content: center;
+
+      img {
+        height: 23px;
+        width: 23px;
+      }
+    }
+
+    a.login {
+      border: 1px solid red;
+      border-radius: 5px;
+    }
+  }
+}

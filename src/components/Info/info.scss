@@ -1,0 +1,39 @@
+.info {
+    height: 89vh;
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: center;
+    border: 1px solid #aca7a7;
+
+    &-img {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        flex-direction: column;
+        padding: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        img {
+            height: 100%;
+           
+            width: 100%;
+        }
+    }
+    &-txt {
+        width: 100%;
+        margin-top: 5px;
+        padding: 5px;
+        border-top: 1px solid #aca7a7;
+
+        label {
+            font-size: 21px;
+            font-weight: 450;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.side-bar {
+    width: 300px;
+    background: blue;
+    padding: 10px 15px;
+    height: 100vh - 10.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    > div {
+        
+        > div {
+            display: flex;
+            height: 36px;
+            align-items: center;
+            padding-left: 15px;
+
+            p {
+                margin-left: 8px;
+                text-transform: capitalize;
+            }
+        }
+        > span {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+}

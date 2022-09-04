@@ -1,0 +1,126 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "30",
+            "rating": "4.5",
+            "quantity": 6
+        }, {
+            "id": "2",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "title": "bign ddkd ddd",
+            "price": "33",
+            "rating": "4.5",
+            "quantity": 3
+        }, {
+            "id": "3",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "",
+            "rating": "",
+            "quantity": 5
+        }, {
+            "id": "4",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "",
+            "rating": "",
+            "quantity": 7
+        }, {
+            "id": "5",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "",
+            "rating": "",
+            "quantity": 1
+        }, {
+            "id": "6",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "",
+            "rating": "",
+            "quantity": ""
+        }, {
+            "id": "7",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "",
+            "rating": "",
+            "quantity": 5
+        }, {
+            "id": "8",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "",
+            "rating": "",
+            "quantity": 4
+        },
+        {
+            "id": "9",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "30",
+            "rating": "4.5",
+            "quantity": 10
+        },
+        {
+            "id": "10",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "30",
+            "rating": "4.5",
+            "quantity": "6"
+        },
+        {
+            "id": "11",
+            "title": "bign ddkd ddd",
+            "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+            "price": "30",
+            "rating": "4.5",
+            "quantity": "6"
+        }
+    ],
+
+    "userinfo": [
+        {
+            "email": "",
+            "password": ""
+        }
+    ],
+
+    "cart": 
+        {
+            "id": "1",
+            "products": [
+                {
+                    "id": "1",
+                    "title": "bign ddkd ddd",
+                    "ImageUrl": "https://www.svgrepo.com/show/218292/fruits-fruit.svg",
+                    "price": "334",
+                    "quantity": "10"
+                }, {
+                    "id": "1",
+                    "title": "bign ddkd ddd",
+                    "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+                    "price": "45",
+                    "quantity": "9"
+                }, {
+                    "id": "1",
+                    "title": "bign ddkd ddd",
+                    "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+                    "price": "90",
+                    "quantity": "1"
+                }, {
+                    "id": "1",
+                    "title": "bign ddkd ddd",
+                    "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
+                    "price": "876",
+                    "quantity": "8"
+                }
+            ]
+
+        }
+    
+}
