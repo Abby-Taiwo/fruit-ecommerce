@@ -23,7 +23,7 @@ $height-header-item: 40px;
   nav {
     display: flex;
     justify-content: space-evenly;
-    width: 400px;
+    width: 200px;
     align-items: center;
     height: 100%;
 
@@ -36,7 +36,8 @@ $height-header-item: 40px;
       align-items: center;
       width: 90px;
       justify-content: center;
-position: relative;
+      position: relative;
+
       img {
         height: 23px;
         width: 23px;
@@ -50,7 +51,7 @@ position: relative;
         top: -1px;
         left: 50px;
         position: absolute;
-         padding: 5px;
+        padding: 5px;
         justify-content: center;
         align-items: center;
       }

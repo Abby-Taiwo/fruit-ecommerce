@@ -20,7 +20,7 @@ export const Payment = () => {
                 <small>message</small>
             </div>
             <div>
-                <label>card number</label>
+                <label>card CCC</label>
                 <Input
                     ref={cardCCCNumber}
                     {...otherProps[5]}/>

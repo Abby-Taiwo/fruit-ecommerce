@@ -6,7 +6,8 @@ const Input = ({
     borderRadiusRight,
     placeholder,
     type,
-    width
+    width,
+    maxlenght
 }, ref) => {
 
     const [input,
@@ -25,6 +26,8 @@ const Input = ({
         borderTopRightRadius: `${borderRadiusRight}px`,
         borderBottomRightRadius: `${borderRadiusRight}px`
     }}
+        
+        maxLength={maxlenght}
         className="input"/>)
 }
 

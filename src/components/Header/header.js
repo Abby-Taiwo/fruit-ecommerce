@@ -39,8 +39,8 @@ const Header = () => {
             <nav>
                 <Link to="/">Home</Link>
                 <CartIcon addToCart={addToCart} cartQuantity={funct(data)} goToCart={goToCart}/>
-                <Link to="/mm">Faqs</Link>
-                <Link to="/auth" className='login'>Register</Link>
+                
+               
             </nav>
         </div>
     )

@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "counter": 0,
+      "counter": 6,
       "title": "family size fruit combo",
       "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
       "price": 67,
@@ -33,7 +33,7 @@
       "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
       "price": 89,
       "rating": "",
-      "counter": 0,
+      "counter": 5,
       "quantity": 5
     },
     {
@@ -43,7 +43,7 @@
       "price": 66,
       "rating": "",
       "quantity": 4,
-      "counter": 0
+      "counter": 2
     },
     {
       "id": "6",
@@ -51,7 +51,7 @@
       "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
       "price": 30,
       "rating": 4.5,
-      "counter": 0,
+      "counter": 1,
       "quantity": 10
     },
     {
@@ -59,14 +59,14 @@
       "title": "bign ddtdd",
       "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
       "price": 30,
-      "counter": 0,
+      "counter": 1,
       "rating": 4.5,
       "quantity": 6
     },
     {
       "id": "9",
       "title": "bdttttd",
-      "counter": 0,
+      "counter": 1,
       "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
       "price": 30,
       "rating": 4.5,
@@ -75,7 +75,7 @@
     {
       "id": "10",
       "title": "tttd",
-      "counter": 0,
+      "counter": 1,
       "ImageUrl": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80",
       "price": 30,
       "rating": 4.5,

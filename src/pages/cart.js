@@ -3,7 +3,7 @@ import Header from '../components/Header/header';
 import CartItem from '../components/CartItem/cartitem';
 import {useSelector} from 'react-redux';
 import {Payment} from '../components/Payment/payment';
-import {TAndC} from '../components/T&C/t&c';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -20,7 +20,6 @@ const Cart = () => {
 
         fetchData()
     }, [cartQuantity]);
-   
 
     return (
         <div>
@@ -37,24 +36,35 @@ const Cart = () => {
                     height: "89.1vh",
                     flexDirection: "column",
                     width: "50vw",
-                    background: "blue"
+                    background: "blue",
+                    overflowY: "scroll"
                 }}>
                     {cart.map(({
                         id,
                         ...otherProps
                     }) => <CartItem key={id} {...otherProps}/>)}
                 </div>
-                <div style={{
+                <div
+                    style={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
                     flexDirection: "column",
                     width: "50vw",
                     padding: "30px 15px 10px"
-                
                 }}>
                     <Payment/>
-                    <TAndC/>
+                    <Link
+                        style={{
+                        height: "50px",
+                        textDecoration: "none",
+                        width: "100%",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        display: "flex",
+                        background: "blue"
+                    }}
+                        to={"/checkout"}>make payment</Link>
                 </div>
 
             </main>

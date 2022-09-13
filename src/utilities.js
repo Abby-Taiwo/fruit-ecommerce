@@ -28,16 +28,19 @@ export const otherProps = [
         type: "",
         borderRadiusLeft: inputBorderRadius,
         placeholder: "Enter card number",
-        borderRadiusRight: inputBorderRadius
+        borderRadiusRight: inputBorderRadius,
+        maxlenght: 11
     }, {
         type: "",
         borderRadiusLeft: inputBorderRadius,
         placeholder: "Enter card CCC pin",
-        borderRadiusRight: inputBorderRadius
+        borderRadiusRight: inputBorderRadius,
+        maxlenght: 4
     }, {
         type: "",
         borderRadiusLeft: inputBorderRadius,
         placeholder: "Enter card pin",
-        borderRadiusRight: inputBorderRadius
+        borderRadiusRight: inputBorderRadius,
+        maxlenght: 11
     }
 ]
