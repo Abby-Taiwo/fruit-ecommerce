@@ -4,7 +4,7 @@ import Input from '../Input/input'
 import "../SignUp/signUp.scss"
 import {signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider} from "firebase/auth";
 import {otherProps} from '../../utilities'
-import { auth } from '../Firebase/firebase.utils';
+import {auth} from '../Firebase/firebase.utils';
 
 const SignIn = () => {
 
@@ -14,31 +14,36 @@ const SignIn = () => {
         setData] = useState({})
     const provider = new GoogleAuthProvider()
 
-    const handlePopUp = () => {
-        signInWithPopup(auth, provider).then((result) => {
+    const handlePopUp = (e) => {
+        e.preventDefault()
+        signInWithPopup(auth, provider)
+        .then(result => {
 
             const user = result.user;
-            console.log(user)
-            //
+            console(user)
+          
+
         }).catch((error) => {
-            // Handle Errors here.
+
             const errorCode = error.code;
 
         })
     }
 
-    const handleSubmit = () => {
-        // let input = {     [email]: password }
-        setData({email, password})
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setData({...email, ...password})
+        console.log(data)
 
-        signInWithEmailAndPassword(auth, data.email, data.password).then((userCredential) => {
-            // Signed in
+        signInWithEmailAndPassword(auth, data.email, data.password)
+        .then(userCredential => {
+          
             const user = userCredential.user;
-            alert(user)
-            //
+         
+
         }).catch((error) => {
 
-            alert("dd")
+            alert(error)
         });
     }
 
@@ -54,10 +59,10 @@ const SignIn = () => {
                 <Input {...otherProps[1]} ref={password}/>
                 <small>message</small>
             </div>
-            <CustomButton onClick={handleSubmit} action={"Sign in"}/>
+            <CustomButton onSubmit={e => handleSubmit(e)} action={"Sign in"}/>
             <small>or</small>
-            <CustomButton action={"Sign in Google"} onClick={handlePopUp}/>
-          
+            <CustomButton action={"Sign in Google"} onSubmit={e => handlePopUp(e)}/>
+
         </section>
     )
 }

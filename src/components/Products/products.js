@@ -1,14 +1,14 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {otherProps} from '../../utilities';
 import Input from '../Input/input';
-import Product from '../ProductTemplate/productproducttemplate';
+import Product from '../ProductTemplate/producttemplate';
 import "./products.scss"
 
 const Products = () => {
 
     const [products,
         setProducts] = useState([])
-    const search = useRef()
+    const search = useRef(null)
 
     useEffect(() => {
         const fetchData = async() => {
@@ -18,14 +18,21 @@ const Products = () => {
         }
 
         fetchData()
-       
+
     }, []);
 
     return (
         <section className="products">
             <div className='products-query'>
-                <Input {...otherProps[4]} ref={search} className='products-query__input'/>
-                <button className='products-query__btn'>
+                <input type="search" ref={search} placeholder="Search products here..." className='products-query__input'/>
+                <button
+                    className='products-query__btn'
+                    onClick={() => {
+                    if (search.current !== "") {
+                        const filteredItem = products.filter((product) => product.title.toLowerCase().includes(`${search.current.toLowerCase()}`))
+                        setProducts(filteredItem)
+                    }
+                }}>
                     <img src='https://www.svgrepo.com/show/14071/search.svg' alt='search button'/>
                 </button>
             </div>
@@ -33,7 +40,7 @@ const Products = () => {
                 {products.map(({
                     id,
                     ...otherProps
-                }) => <Product {...otherProps} key={id}/>)}
+                }) => <Product {...otherProps} id={id} key={id}/>)}
             </div>
         </section>
     )

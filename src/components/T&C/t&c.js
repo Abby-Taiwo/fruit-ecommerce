@@ -4,11 +4,8 @@ import "./t&c.scss"
 
 export const TAndC = () => {
   return (
-    <section className='TAndC'>
-        <div>
-
-        </div>
-       <Link to={"/checkout"}>proceed to payment</Link>
-    </section>
+    
+       <Link to={"/checkout"} className='TAndC'>proceed to payment</Link>
+   
   )
 }

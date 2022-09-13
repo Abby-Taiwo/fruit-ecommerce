@@ -2,18 +2,25 @@ import React from 'react'
 import "./cartitem.scss"
 import {Link} from 'react-router-dom'
 
-const CartItem = ({quantity, price, ImgUrl, title}) => {
+const CartItem = ({counter, price, ImageUrl, title}) => {
 
     return (
-        <Link to={`/products/${title}`} className="cartitem">
+        <Link
+            to={`/products/${title}`}
+        style={{
+             display: `${counter >= 1
+                 ? "flex"
+                 : "none"}`
+         }}
+            className="cartitem">
 
-            <img src={`${ImgUrl}`} alt="product image"/>
+            <img src={`${ImageUrl}`} alt="product image"/>
 
             <div className='cartitem__text'>
                 <span>{title}</span>
                 <div className='cartitem__text-number'>
-                    <div>{`$ ${price}`}</div>
-                    <label>{`x ${quantity}`}</label>
+                    <div>{`$ ${price * counter}`}</div>
+                    <label>{`x ${counter}`}</label>
                 </div>
             </div>
         </Link>

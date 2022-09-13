@@ -36,10 +36,23 @@ $height-header-item: 40px;
       align-items: center;
       width: 90px;
       justify-content: center;
-
+position: relative;
       img {
         height: 23px;
         width: 23px;
+      }
+
+      span {
+        background: greenyellow;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        top: -1px;
+        left: 50px;
+        position: absolute;
+         padding: 5px;
+        justify-content: center;
+        align-items: center;
       }
     }
 

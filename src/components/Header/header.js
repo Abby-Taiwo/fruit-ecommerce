@@ -1,23 +1,36 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect, useMemo, useState} from 'react'
 import {Link} from 'react-router-dom'
 import "./header.scss"
 import addToCart from "../../assets/icons/add_to_cart.svg"
 import goToCart from "../../assets/icons/shopping_cart.svg"
+import {useSelector} from 'react-redux'
+import CartIcon from '../CartIcon/cartIcon'
 
-export const Header = () => {
-    const [cart,
-        setCart] = useState(0)
+const Header = () => {
+    const [data,
+        setData] = useState([])
+    const cartQuantity = useSelector((state) => state.cartQuantityCounter.value)
 
     useEffect(() => {
-        const fetchData = async() => {
-            const resp = await fetch('http://localhost:3001/cart')
-            const cart = await resp.json()
-            setCart(cart.products.length)
+        const ad = async() => {
+            const resp = await fetch('http://localhost:3001/products')
+            const products = await resp.json()
+            setData(products)
+        }
+        ad()
+
+    }, [cartQuantity])
+
+    const funct = (products) => {
+        let f = 0
+
+        for (let i = 0; i < products.length; i++) {
+            f += products[i].counter
 
         }
-
-        fetchData()
-    }, []);
+       
+        return f
+    }
 
     return (
         <div className='header'>
@@ -25,17 +38,12 @@ export const Header = () => {
             <div>FRUITO - the planet of fruits</div>
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/cart">
-                    <img
-                        src={cart > 0
-                        ? goToCart
-                        : addToCart}
-                        alt='cart'></img>
-
-                </Link>
+                <CartIcon addToCart={addToCart} cartQuantity={funct(data)} goToCart={goToCart}/>
                 <Link to="/mm">Faqs</Link>
                 <Link to="/auth" className='login'>Register</Link>
             </nav>
         </div>
     )
 }
+
+export default Header

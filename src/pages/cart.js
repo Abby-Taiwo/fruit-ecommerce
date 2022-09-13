@@ -1,31 +1,34 @@
 import React, {useState, useEffect} from 'react'
-import HeaderGen from '../components/HeaderGen/headergen';
+import Header from '../components/Header/header';
 import CartItem from '../components/CartItem/cartitem';
-import { TAndC } from '../components/T&C/t&c';
+import {useSelector} from 'react-redux';
+import {Payment} from '../components/Payment/payment';
+import {TAndC} from '../components/T&C/t&c';
 
 const Cart = () => {
 
     const [cart,
         setCart] = useState([])
-
+    const cartQuantity = useSelector((state) => state.cartQuantityCounter)
     useEffect(() => {
         const fetchData = async() => {
-            const resp = await fetch('http://localhost:3001/cart')
+            const resp = await fetch('http://localhost:3001/products')
             const products = await resp.json()
-            setCart(products.products)
+            setCart(products)
 
         }
 
         fetchData()
-    }, []);
+    }, [cartQuantity]);
+   
+
     return (
         <div>
-            <HeaderGen/>
+            <Header/>
             <main
                 style={{
                 display: "flex",
-                heigth: "100%",
-                
+                heigth: "100%"
             }}>
                 <div
                     style={{
@@ -33,13 +36,27 @@ const Cart = () => {
                     alignItems: "center",
                     height: "89.1vh",
                     flexDirection: "column",
-                    flexWrap: "wrap",
-                    width: "600px",
+                    width: "50vw",
                     background: "blue"
                 }}>
-                    {cart.map(({id, ...otherProps}) => <CartItem key={id} {...otherProps}/>)}
+                    {cart.map(({
+                        id,
+                        ...otherProps
+                    }) => <CartItem key={id} {...otherProps}/>)}
                 </div>
-                <TAndC />
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    flexDirection: "column",
+                    width: "50vw",
+                    padding: "30px 15px 10px"
+                
+                }}>
+                    <Payment/>
+                    <TAndC/>
+                </div>
+
             </main>
 
         </div>

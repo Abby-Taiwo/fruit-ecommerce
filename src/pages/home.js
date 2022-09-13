@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header} from '../components/Header/header'
+import Header from '../components/Header/header'
 import Products from '../components/Products/products'
 import SideBar from '../components/SideBar/sideBar'
 
@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Header/>
             <main style={{display: "flex"}}>
-                <SideBar/>
+                {/* <SideBar/> */}
                 <Products/>
             </main>
 

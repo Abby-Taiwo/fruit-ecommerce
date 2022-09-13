@@ -1,28 +1,37 @@
-import React from 'react'
-import { Counter } from '../Counter/counter'
+import React, {useState} from 'react'
+import {Counter} from '../Counter/counter'
 import "./info.scss"
+import {increment} from '../../Features/counter/cartQuantitySlice'
+import {useDispatch} from 'react-redux'
 
-export const Info = () => {
+export const Info = ({
+    ImageUrl,
+    price,
+    id,
+    counter,
+    title,
+    quantity
+}) => {
+
+    const [count,
+        setCount] = useState(counter)
+    const dispatch = useDispatch()
+   
     return (
         <div className='info'>
             <span className='info-img'>
-                <img
-                    src={"https://www.svgrepo.com/show/218292/fruits-fruit.svg"}
-                    alt="product-image"/>
+                <img src={ImageUrl} alt="product-pic"/>
 
             </span>
             <div className='info-txt'>
-                <label>https://ww w.svgrepo.com/show/2 18292/fruit s-fruit.svg
-                </label>
+                <div>{title}</div>
                 <section>
-                    <label>$ 34</label>
+                    <label>{`$ ${price}`}</label>
                 </section>
             </div>
-            <div style={{width: "100%"}}>
-              <button>Add to cart</button>
-            <Counter height={50}/>
+            <div className='info-btn'>               
             </div>
-            
+
         </div>
     )
 }

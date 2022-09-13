@@ -1,15 +1,22 @@
 import React, {useState, useImperativeHandle, forwardRef} from 'react'
 import "./input.scss"
 
-const Input = ({borderRadiusLeft,borderRadiusRight,placeholder,type,width}, ref) => {
+const Input = ({
+    borderRadiusLeft,
+    borderRadiusRight,
+    placeholder,
+    type,
+    width
+}, ref) => {
 
     const [input,
         setInput] = useState("")
 
-    useImperativeHandle(React.createRef(), () => input, [input])
+    useImperativeHandle(ref, () => input, [input])
 
     return (<input
         type={type}
+        onChange={e => setInput(e.target.value)}
         placeholder={placeholder}
         style={{
         width: `${width}px`,

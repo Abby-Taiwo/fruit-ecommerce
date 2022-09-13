@@ -29,21 +29,16 @@ const SideBar = () => {
             <div>
                 <span>product life span</span>
                 <div>
-                    <Input
-                        ref={refs.productLifeSpan.perishable}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
+
                     <p>Perishable</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.productLifeSpan.semiPerishable}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>Semi perishable</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.productLifeSpan.nonPerishable}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>Non perishable</p>
                 </div>
             </div>
@@ -51,33 +46,23 @@ const SideBar = () => {
             <div>
                 <span>price</span>
                 <div>
-                    <Input
-                        ref={refs.price.perishable}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>below 3</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.price.semiPerishable}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>Semi perishable</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.price.nonPerishable}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>Non perishable</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.price}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>below 3</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.price}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>below 3</p>
                 </div>
             </div>
@@ -85,27 +70,19 @@ const SideBar = () => {
             <div>
                 <span>reviews</span>
                 <div>
-                    <Input
-                        ref={refs.reviews}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>below 3</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.reviews}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>below 3</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.reviews}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>Semi perishable</p>
                 </div>
                 <div>
-                    <Input
-                        ref={refs.reviews}
-                        {...otherProps[2]}/>
+                    <input type="checkbox"/>
                     <p>Non perishable</p>
                 </div>
             </div>

@@ -34,8 +34,6 @@ export const Payment = () => {
                     {...otherProps[6]}/>
                 <small>message</small>
             </div>
-
-            <CustomButton action={"pay with stripe"} background={"transparent"}/>
         </form>
     )
 }

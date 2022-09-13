@@ -1,17 +1,18 @@
 .cartitem {
-    height: 110px;
+    min-height: 110px;
     width: 90%;
     display: flex;
     padding: 10px;
     background: red;
     justify-content: space-evenly;
     text-decoration: none;
+    align-items: center;
     margin: 20px 10px 0 10px;
     border-radius: 5px;
     color: black;
 
-    img {
-        height: 90%;
+    > img {
+        height: 100px;
         width: 30%;
     }
 

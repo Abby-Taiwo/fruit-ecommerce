@@ -15,7 +15,7 @@ export const otherProps = [
     }, {
         type: "checkbox"
     }, {
-        type: "",
+        type: "text",
         borderRadiusLeft: inputBorderRadius,
         placeholder: "Enter card number",
         borderRadiusRight: inputBorderRadius
