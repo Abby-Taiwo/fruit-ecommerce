@@ -55,33 +55,18 @@ const ProductTemplate = ({
                     display: `${count < 1
                         ? "flex"
                         : "none"}`,
-                    height: "45px",
+                    height: "41px",
+                    border: "none",
                     justifyContent: "center",
                     alignItems: "center"
                 }}
                     onClick={() => {
-                    setCount(count + 1)  
-                    
-                    //DD
-                    dispatch(increment())
-                    
-                    //DD
-                    fetch(`http://localhost:3001/products/${id}`, {
-                        method: 'PATCH',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            counter: count + 1
-                        })
-                    })
-
-                    //DD
-
-
-                    
-                
-                }}>Add to Cart</button>
+                    setCount(count + 1) 
+                    dispatch(increment()) 
+                    fetch(`http://localhost:3001/products/${id}`,
+                     { method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ counter: count + 1 }) }) 
+                     }}>Add to Cart</button>
                 <Counter height={41}/>
             </context.Provider>
         </div>

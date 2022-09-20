@@ -3,7 +3,7 @@ import Header from '../components/Header/header';
 import CartItem from '../components/CartItem/cartitem';
 import {useSelector} from 'react-redux';
 import {Payment} from '../components/Payment/payment';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Cart = () => {
 
@@ -20,6 +20,17 @@ const Cart = () => {
 
         fetchData()
     }, [cartQuantity]);
+
+    const funct = (products) => {
+        let f = 0
+
+        for (let i = 0; i < products.length; i++) {
+            f += products[i].counter
+
+        }
+       
+        return f
+    }
 
     return (
         <div>
@@ -39,10 +50,16 @@ const Cart = () => {
                     background: "blue",
                     overflowY: "scroll"
                 }}>
-                    {cart.map(({
-                        id,
-                        ...otherProps
-                    }) => <CartItem key={id} {...otherProps}/>)}
+                    {funct(cart) === 0
+                        ? <h4 style={{
+                            justifySelf: "center"
+                           
+                        }}>cart is empty</h4>
+                        : cart.map(({
+                            id,
+                            ...otherProps
+                        }) => <CartItem key={id} {...otherProps}/>)
+}
                 </div>
                 <div
                     style={{
@@ -62,7 +79,8 @@ const Cart = () => {
                         justifyContent: "center",
                         alignItems: "center",
                         display: "flex",
-                        background: "blue"
+                        background: "blue",
+                        color: "#fff"
                     }}
                         to={"/checkout"}>make payment</Link>
                 </div>
