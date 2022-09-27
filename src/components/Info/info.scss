@@ -69,3 +69,20 @@
         }
     }
 }
+
+@media only screen and (max-width: 755px) {
+    .info {
+          
+        &-txt {
+            flex-direction: column;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            > div {
+                width: 100%;
+                font-weight: 400;
+            }
+    
+          
+        }}
+}

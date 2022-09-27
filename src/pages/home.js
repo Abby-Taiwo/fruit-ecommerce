@@ -4,7 +4,7 @@ import Products from '../components/Products/products'
 
 const Home = () => {
     return (
-        <div>
+        <div style={{marginBottom: "40px"}}>
             <Header/>
             <main style={{display: "flex"}}>
                 <Products/>
